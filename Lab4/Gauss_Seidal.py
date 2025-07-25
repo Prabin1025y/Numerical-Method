@@ -23,7 +23,7 @@ while iter <= N:
         s = 0
         for j in range(n):
             if j != i:
-                s += A[i,j] * x_old[j]
+                s += A[i,j] * x[j]
         x[i] = (A[i, -1] - s) / A[i,i]
     err = np.abs(x - x_old)
     Table.append([iter] + [x[i] for i in range(n)])
