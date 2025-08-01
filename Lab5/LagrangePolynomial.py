@@ -25,7 +25,7 @@ y_val_graph = poly(x_val_graph)
 
 
 xp = float(input('Enter the value to interpolate: '))
-int_value = lg_polynomial.subs(x, xp);
+int_value = lg_polynomial.subs(x, xp)
 print(f"The interpolated value of {xp} is {int_value}")
 
 plt.plot(x_val_graph, y_val_graph, color='blue')

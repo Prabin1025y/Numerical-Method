@@ -18,7 +18,7 @@ coeff = slg.solve(A,B)
 
 print(f"The curve of best fit is: {coeff[0]} + {coeff[1]}x + {coeff[2]}x^2")
 
-x_val_graph = np.linspace(min(X)-1, max(X+1), 1000)
+x_val_graph = np.linspace(min(X)-1, max(X) + 1, 1000)
 y_val_graph = [eval(f"{coeff[0][0]} + {coeff[1][0]}*x + {coeff[2][0]}*x**2") for x in x_val_graph]
 
 plt.plot(x_val_graph, y_val_graph, color="blue")
